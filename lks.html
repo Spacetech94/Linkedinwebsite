@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>LinkedIn Ascent | Your Expert B2B LinkedIn Marketing & Ads Agency</title>
+    <meta name="description" content="Stop wasting time on LinkedIn. LinkedIn Ascent is a specialist B2B agency that builds high-ROI LinkedIn Ad campaigns and Sales Navigator outreach systems to flood your sales pipeline with qualified leads.">
+    <meta name="keywords" content="LinkedIn advertising agency, B2B lead generation, LinkedIn ads management, Sales Navigator outreach, B2B marketing agency, increase sales pipeline, LinkedIn ROI">
+
+    <!-- Google Fonts: Inter & Poppins for Menu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- All Styles are self-contained here -->
+    <style>
+        /* --- LinkedIn-Inspired Color Palette --- */
+        :root {
+            --color-primary: #0A66C2;
+            --color-primary-darker: #004182;
+            --color-navy: #0D1B2A;
+            --color-slate: #334155;
+            --color-light-slate: #64748B;
+            --color-background-light: #F4F6F8; /* Softer than pure white */
+            --color-background-light-subtle: #FFFFFF;
+            --color-background-dark: #0D1B2A;
+            --color-background-dark-subtle: #1B2735;
+            --color-pure-white: #FFFFFF;
+            --color-accent-gold: #FFD700;
+        }
+
+        /* --- Theme Variables --- */
+        html {
+            --bg-color: var(--color-background-light);
+            --bg-subtle-color: var(--color-background-light-subtle);
+            --text-heading-color: var(--color-navy);
+            --text-body-color: var(--color-slate);
+            --border-color: #e2e8f0;
+            --navbar-bg: rgba(244, 246, 248, 0.6);
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            --card-shadow-hover: 0 8px 20px rgba(0,0,0,0.07);
+            --menu-hover-bg: rgba(0,0,0,0.05);
+            --menu-text-color: var(--color-slate);
+        }
+
+        html.dark-mode {
+            --bg-color: var(--color-background-dark);
+            --bg-subtle-color: var(--color-background-dark-subtle);
+            --text-heading-color: var(--color-pure-white);
+            --text-body-color: #94a3b8;
+            --border-color: #2d3748;
+            --navbar-bg: rgba(27, 39, 53, 0.6);
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            --card-shadow-hover: 0 8px 25px rgba(0,0,0,0.3);
+            --menu-hover-bg: rgba(255,255,255,0.08);
+            --menu-text-color: #94a3b8;
+        }
+
+        /* --- BASE & RESET --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-body-color);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a { color: inherit; text-decoration: none; }
+        ul { list-style: none; }
+        strong { color: var(--text-heading-color); font-weight: 600; }
+
+        /* --- UTILITY & LAYOUT --- */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .text-center { text-align: center; }
+        
+        /* --- HEADER & NAVBAR --- */
+        .header {
+            position: fixed; top: 1rem; left: 50%;
+            transform: translateX(-50%);
+            width: 95%; max-width: 64rem; z-index: 50;
+        }
+        .navbar {
+            position: relative;
+            background-color: var(--navbar-bg);
+            backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            border-radius: 999px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .navbar__logo {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 1.25rem; font-weight: 800; color: var(--text-heading-color);
+            padding-left: 1rem;
+        }
+        .navbar__logo svg { height: 28px; width: auto; }
+        .navbar__nav { display: none; }
+        .navbar__nav-list { display: flex; align-items: center; gap: 0.5rem; }
+        .navbar__nav-link { 
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500; 
+            font-size: 0.95rem;
+            color: var(--menu-text-color); 
+            transition: color 0.2s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            z-index: 1;
+        }
+        .navbar__nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: var(--menu-hover-bg);
+            border-radius: inherit;
+            transform: scale(0.8);
+            opacity: 0;
+            transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: -1;
+        }
+        .navbar__nav-link:hover { 
+            color: var(--text-heading-color);
+        }
+        .navbar__nav-link:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .navbar__actions { display: flex; align-items: center; gap: 0.5rem; }
+        .navbar__cta {
+            display: none; background-color: var(--color-primary);
+            color: white; font-weight: 600; padding: 0.6rem 1.25rem;
+            border-radius: 999px; transition: all 0.3s ease;
+        }
+        .navbar__cta:hover { background-color: var(--color-primary-darker); transform: scale(1.05); }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            background-color: transparent; border: none;
+            border-radius: 999px; padding: 0.5rem;
+            cursor: pointer; display: flex; align-items: center;
+        }
+        .theme-toggle__icon { width: 1.25rem; height: 1.25rem; color: var(--text-body-color); transition: color 0.3s; }
+        .theme-toggle:hover .theme-toggle__icon { color: var(--text-heading-color); }
+        #theme-toggle-light-icon { display: none; }
+        html.dark-mode #theme-toggle-light-icon { display: block; }
+        html.dark-mode #theme-toggle-dark-icon { display: none; }
+
+        /* Hamburger Menu */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; padding: 0.5rem; }
+        .hamburger span { width: 24px; height: 3px; background-color: var(--text-heading-color); border-radius: 2px; transition: all 0.3s ease; }
+
+        /* MAIN CONTENT */
+        main { padding-top: 8rem; }
+        section { padding: 5rem 0; }
+        .section-subtle { 
+            background-color: var(--bg-subtle-color); 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .section-title {
+            font-size: 2.5rem; font-weight: 800; color: var(--text-heading-color);
+            margin-bottom: 1rem; line-height: 1.2;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; color: var(--text-body-color); max-width: 48rem;
+            margin: 0 auto 4rem auto;
+        }
+
+        /* Hero Section */
+        .hero__grid { display: grid; gap: 3rem; align-items: center; }
+        .hero__headline {
+            font-size: 3rem; font-weight: 900; color: var(--text-heading-color);
+            line-height: 1.2; margin-bottom: 1.5rem;
+        }
+        .hero__headline .highlight { color: var(--color-primary); }
+        .hero__subheadline { font-size: 1.2rem; margin: 0 0 2.5rem 0; }
+        .btn {
+            font-weight: 600; padding: 0.9rem 2rem; border-radius: 0.5rem;
+            transition: all 0.3s ease; border: 1px solid transparent;
+            display: inline-block;
+        }
+        .btn--primary {
+            background-color: var(--color-primary); color: white;
+            box-shadow: 0 4px 14px 0 rgba(10, 102, 194, 0.39);
+        }
+        .btn--primary:hover { background-color: var(--color-primary-darker); transform: translateY(-2px); }
+        
+        /* Service Cards */
+        .card-grid { display: grid; gap: 2rem; }
+        .card {
+            background-color: var(--bg-subtle-color);
+            padding: 2rem; border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease; text-align: left;
+            display: flex; flex-direction: column;
+        }
+        .card:hover { transform: translateY(-8px); box-shadow: var(--card-shadow-hover); }
+        .card__image {
+            width: 100%; height: 200px; object-fit: cover;
+            border-radius: 0.5rem; margin-bottom: 1.5rem;
+        }
+        .card__content { flex-grow: 1; }
+        .card__icon {
+            width: 3rem; height: 3rem; background-color: var(--color-soft-sky-blue);
+            border-radius: 0.5rem; margin-bottom: 1.5rem; display: flex;
+            align-items: center; justify-content: center;
+        }
+        html.dark-mode .card__icon { background-color: var(--color-primary); }
+        .card__icon svg { width: 1.75rem; height: 1.75rem; color: var(--color-primary); }
+        html.dark-mode .card__icon svg { color: var(--color-pure-white); }
+        .card__title { font-size: 1.5rem; font-weight: 700; color: var(--text-heading-color); margin-bottom: 1rem; }
+        .card p { margin-bottom: 1.5rem; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { padding-left: 1.75rem; position: relative; margin-bottom: 0.75rem; }
+        .card li::before { content: '✓'; position: absolute; left: 0; color: var(--color-primary); font-weight: 700; }
+        
+        /* Process Section */
+        .process-timeline { position: relative; max-width: 48rem; margin: 4rem auto 0; }
+        .process-timeline::before {
+            content: ''; position: absolute; left: 1.25rem; top: 0; bottom: 0;
+            width: 2px; background-color: var(--border-color);
+        }
+        .process-step { position: relative; padding-left: 4rem; padding-bottom: 3rem; }
+        .process-step:last-child { padding-bottom: 0; }
+        .process-step__number {
+            position: absolute; left: 0; top: -5px; width: 2.5rem; height: 2.5rem;
+            border: 2px solid var(--border-color); background-color: var(--bg-color);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 1.125rem; color: var(--color-primary);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .process-step__title { font-size: 1.25rem; font-weight: 600; color: var(--text-heading-color); margin-bottom: 0.5rem; }
+        
+        /* Why Us & Results */
+        .feature-grid { display: grid; gap: 2rem; }
+        .feature-item {
+            background-color: var(--bg-color);
+            padding: 2rem; border: 1px solid var(--border-color); border-radius: 0.5rem;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .feature-item__title { font-size: 1.125rem; font-weight: 600; color: var(--text-heading-color); margin-bottom: 0.5rem; }
+        .results-grid { display: grid; gap: 2rem; text-align: center; }
+        .results-item__metric { font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem; color: var(--color-primary); }
+        .results-item__title { font-size: 1.125rem; font-weight: 500; color: var(--text-body-color); }
+        html.dark-mode .results-item__metric { color: var(--color-pure-white); }
+
+        /* Testimonial */
+        .testimonial { background-color: var(--color-navy); color: white; border-radius: 1rem; padding: 3rem; text-align: center; }
+        .testimonial__image { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.5rem auto; object-fit: cover; }
+        .testimonial__quote { font-size: 1.25rem; font-weight: 500; line-height: 1.6; max-width: 45rem; margin: 0 auto 1.5rem auto; color: #E2E8F0; }
+        .testimonial__author { font-weight: 600; color: var(--color-pure-white); }
+        .testimonial__author span { display: block; font-weight: 400; color: #94a3b8; font-size: 0.9rem; }
+        
+        /* CTA & Footer */
+        .cta-box {
+            background-color: var(--bg-subtle-color);
+            border: 1px solid var(--border-color); border-radius: 1rem; padding: 2.5rem; text-align: center;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .cta-box .section-subtitle { margin-bottom: 2rem; }
+        .cta-box .btn { font-size: 1.125rem; padding: 1rem 2.5rem; }
+        .footer { padding: 4rem 0; background-color: var(--bg-subtle-color); border-top: 1px solid var(--border-color); transition: background-color 0.3s ease, border-color 0.3s ease;}
+        .footer-grid { display: grid; gap: 2.5rem; text-align: center; }
+        .footer__title { font-size: 1.125rem; font-weight: 700; color: var(--text-heading-color); margin-bottom: 1rem; }
+        .footer-links { display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a:hover { color: var(--color-primary); }
+        .footer__copyright {
+            margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);
+            text-align: center; font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        /* Animations */
+        .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .reveal-on-scroll.visible { opacity: 1; transform: translateY(0); }
+        
+        .reveal-on-scroll .card:nth-child(2),
+        .reveal-on-scroll .feature-item:nth-child(2),
+        .reveal-on-scroll .results-item:nth-child(2),
+        .reveal-on-scroll .process-step:nth-child(2) { transition-delay: 0.1s; }
+        .reveal-on-scroll .feature-item:nth-child(3),
+        .reveal-on-scroll .results-item:nth-child(3),
+        .reveal-on-scroll .process-step:nth-child(3) { transition-delay: 0.2s; }
+        .reveal-on-scroll .results-item:nth-child(4),
+        .reveal-on-scroll .feature-item:nth-child(4) { transition-delay: 0.3s; }
+        
+        /* RESPONSIVENESS */
+        @media (min-width: 768px) {
+            .navbar__nav, .navbar__cta { display: flex; }
+            .hero__grid { grid-template-columns: 1fr 1fr; text-align: left; }
+            .hero__headline { font-size: 3.2rem; }
+            .card-grid, .feature-grid { grid-template-columns: repeat(2, 1fr); }
+            .results-grid { grid-template-columns: repeat(4, 1fr); }
+            .footer-grid { grid-template-columns: repeat(4, 1fr); text-align: left; }
+            .cta-box { padding: 4rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .hero__headline { font-size: 3.5rem; }
+        }
+
+        @media (max-width: 767px) {
+            .hero__headline { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .navbar__nav { display: block; position: absolute; top: 110%; right: 0; background-color: var(--bg-subtle-color); width: 100%; border-radius: 0.75rem; box-shadow: var(--card-shadow); border: 1px solid var(--border-color); max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; }
+            .navbar__nav.active { max-height: 500px; padding: 1rem 0; }
+            .navbar__nav-list { flex-direction: column; align-items: center; padding: 1rem; gap: 1rem; }
+            .hamburger { display: flex; }
+            .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        }
+    </style>
+    <!-- Head script to prevent flash of unstyled content (FOUC) -->
+    <script>
+        (() => {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            let theme = 'light';
+            if (savedTheme) {
+                theme = savedTheme;
+            } else if (prefersDark) {
+                theme = 'dark';
+            }
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="linkedin-ascent.html" class="navbar__logo">
+                <svg viewBox="0 0 125 32" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM12.27 10.91H15.27V22.55H12.27V10.91ZM13.77 8.18C14.73 8.18 15.52 8.97 15.52 9.93C15.52 10.89 14.73 11.68 13.77 11.68C12.81 11.68 12.02 10.89 12.02 9.93C12.02 8.97 12.81 8.18 13.77 8.18ZM17.27 10.91H20.18V12.25C20.61 11.42 21.6 10.64 23.05 10.64C26.11 10.64 26.55 12.73 26.55 15.45V22.55H23.55V16.36C23.55 14.82 23.09 13.82 22.02 13.82C20.66 13.82 20.27 14.95 20.27 16.36V22.55H17.27V10.91Z" fill="var(--color-primary)"/>
+                    <text x="42" y="23" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="var(--text-heading-color)">Ascent</text>
+                </svg>
+            </a>
+            <div class="navbar__nav" id="nav-menu">
+                <ul class="navbar__nav-list">
+                    <li><a href="#services" class="navbar__nav-link">Services</a></li>
+                    <li><a href="#process" class="navbar__nav-link">Our Process</a></li>
+                    <li><a href="#why-us" class="navbar__nav-link">Why Us?</a></li>
+                    <li><a href="#results" class="navbar__nav-link">Results</a></li>
+                </ul>
+            </div>
+            <div class="navbar__actions">
+                <a href="proposal.html" class="navbar__cta">Get Free Proposal</a>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle light/dark theme">
+                    <svg id="theme-toggle-dark-icon" class="theme-toggle__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+                    <svg id="theme-toggle-light-icon" class="theme-toggle__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>
+                </button>
+                <div class="hamburger" id="hamburger-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container reveal-on-scroll">
+            <div class="hero__grid">
+                <div class="hero__text">
+                    <h1 class="hero__headline">Tired of Wasting Money on LinkedIn? We Build <span class="highlight">Revenue Engines.</span></h1>
+                    <p class="hero__subheadline">Stop guessing. LinkedIn Ascent builds <strong>high-performance Ad campaigns</strong> and <strong>automated Sales Navigator outreach systems</strong> that generate a predictable pipeline of qualified, ready-to-talk leads for your B2B business.</p>
+                    <a href="proposal.html" class="btn btn--primary">Get My Free Growth Blueprint</a>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/9d311854-3e9a-47d3-bb74-3252a12a8069.png" alt="Abstract data visualization of a business growth chart" style="border-radius: 1rem; width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-subtle reveal-on-scroll">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Your Complete LinkedIn Growth Solution</h2>
+                    <p class="section-subtitle">We don't offer a confusing menu of services. We've mastered the only two systems you need to dominate your market on LinkedIn.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM21 21l-5.197-5.197" /></svg></div>
+                            <h3 class="card__title">LinkedIn Ads That Convert</h3>
+                            <p>We turn your ad spend into a predictable revenue machine by putting your message in front of <strong>in-market decision-makers</strong> and creating new demand for your services.</p>
+                            <ul>
+                                <li>Data-Driven Audience Targeting</li>
+                                <li>High-Converting Ad Creative & Copy</li>
+                                <li>Advanced Conversion Tracking & ROI Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/96c78822-19e4-440a-a037-12822a16d09e.png" alt="Conceptual image representing sales outreach on a professional network" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Sales Navigator Outreach</h3>
+                            <p>We build a powerful, semi-automated outreach system to <strong>book qualified sales meetings on autopilot</strong>, filling your calendar without your team lifting a finger.</p>
+                            <ul>
+                                <li>Ideal Customer Profile (ICP) Blueprinting</li>
+                                <li>Multi-Touch Personalization Sequences</li>
+                                <li>Direct-to-Calendar Appointment Setting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="container reveal-on-scroll">
+            <div class="text-center">
+                <h2 class="section-title">Our 3-Step Plan to Predictable Growth</h2>
+                <p class="section-subtitle">Our process is transparent, efficient, and laser-focused on delivering a positive ROI in 90 days or less.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step"><div class="process-step__number">1</div><h3 class="process-step__title">Strategy & Growth Blueprint</h3><p>We perform a deep dive into your business to build a <strong>custom LinkedIn growth blueprint.</strong> No cookie-cutter plans here.</p></div>
+                <div class="process-step"><div class="process-step__number">2</div><h3 class="process-step__title">System Build & Launch</h3><p>Our expert team builds your campaigns, writes your copy, and launches your outreach sequences. <strong>We handle all the heavy lifting.</strong></p></div>
+                <div class="process-step"><div class="process-step__number">3</div><h3 class="process-step__title">Optimize, Scale & Report</h3><p>We continually optimize your campaigns for peak performance, providing <strong>transparent reports that clearly show your ROI.</strong></p></div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="section-subtle reveal-on-scroll">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Why LinkedIn Ascent?</h2>
+                    <p class="section-subtitle">You have options. Here's why B2B leaders who are serious about growth choose us as their long-term partner.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item"><h3 class="feature-item__title">We Are LinkedIn Specialists</h3><p>We don't do Facebook, TikTok, or SEO. We live and breathe B2B LinkedIn marketing. This singular focus makes us better.</p></div>
+                    <div class="feature-item"><h3 class="feature-item__title">We Build Revenue Systems</h3><p>Our goal is to build a predictable revenue asset for your business, not just run a few ads and hope for the best.</p></div>
+                    <div class="feature-item"><h3 class="feature-item__title">Direct Access to Experts</h3><p>You work directly with senior-level strategists. No junior account managers. No excuses.</p></div>
+                    <div class="feature-item"><h3 class="feature-item__title">Radical Transparency</h3><p>You get clear reports that tie every dollar spent to pipeline and revenue. No vanity metrics, ever.</p></div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Testimonial Section -->
+        <section id="testimonial" class="container reveal-on-scroll">
+            <div class="testimonial">
+                <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/468b321a-1d54-471a-8323-9524e4f7110c.png" alt="Headshot of Jane Doe" class="testimonial__image">
+                <p class="testimonial__quote">"Working with LinkedIn Ascent was a game-changer. They doubled our qualified leads in the first quarter alone. Their system is the real deal."</p>
+                <p class="testimonial__author">Jane Doe <span>CEO, TechSolutions Inc.</span></p>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="container reveal-on-scroll">
+            <div class="text-center">
+                <h2 class="section-title">The Proof Is In The Pipeline</h2>
+                <p class="section-subtitle">We measure success by the only metric that matters: your growth. Our systems are designed to deliver a clear and significant return on your investment.</p>
+            </div>
+            <div class="results-grid">
+                <div class="results-item"><p class="results-item__metric">312%</p><h3 class="results-item__title">Average Client ROI</h3></div>
+                <div class="results-item"><p class="results-item__metric">47+</p><h3 class="results-item__title">Avg. Qualified Leads / Qtr</h3></div>
+                <div class="results-item"><p class="results-item__metric">&lt;90 Days</p><h3 class="results-item__title">Time to Positive ROI</h3></div>
+                <div class="results-item"><p class="results-item__metric">$50M+</p><h3 class="results-item__title">Client Pipeline Generated</h3></div>
+            </div>
+        </section>
+        
+        <!-- Final CTA Section -->
+        <section id="contact" class="container reveal-on-scroll">
+            <div class="cta-box">
+                 <h2 class="section-title">Ready to Build Your LinkedIn Revenue Engine?</h2>
+                 <p class="section-subtitle">Book a complimentary strategy session. We'll audit your current efforts and deliver a custom Growth Blueprint you can implement immediately. <strong>No pressure. No obligation.</strong></p>
+                 <a href="proposal.html" class="btn btn--primary">Claim My Free Growth Blueprint</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer__title">LinkedInAscent</h3><p>Your expert partner in B2B LinkedIn Marketing.</p></div>
+                <div><h4 class="footer__title">Services</h4><ul class="footer-links"><li><a href="#services">LinkedIn Ads</a></li><li><a href="#services">Sales Navigator Outreach</a></li></ul></div>
+                <div><h4 class="footer__title">Company</h4><ul class="footer-links"><li><a href="#process">Our Process</a></li><li><a href="#why-us">Why Us?</a></li></ul></div>
+                <div><h4 class="footer__title">Contact</h4><p>hello@linkedinascent.com</p></div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; <span id="current-year"></span> LinkedIn Ascent. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for Animations, Theme Toggle, and Dynamic Content -->
+    <script>
+        // Placed in a self-invoking function to avoid polluting global scope
+        (() => {
+            // Function to apply the theme
+            const applyTheme = (theme) => {
+                const htmlEl = document.documentElement;
+                if (theme === 'dark') {
+                    htmlEl.classList.add('dark-mode');
+                } else {
+                    htmlEl.classList.remove('dark-mode');
+                }
+            };
+
+            // Event listener for the theme toggle button
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const htmlEl = document.documentElement;
+                    const newTheme = htmlEl.classList.contains('dark-mode') ? 'light' : 'dark';
+                    localStorage.setItem('theme', newTheme);
+                    applyTheme(newTheme);
+                });
+            }
+
+            // Animations on Scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal-on-scroll').forEach(elem => {
+                observer.observe(elem);
+            });
+
+            // Hamburger Menu
+            const hamburger = document.getElementById('hamburger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Dynamic Year
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+</body>
+</html>
