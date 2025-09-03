@@ -4,61 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>LinkedIn Ascent | Your Expert B2B LinkedIn Marketing & Ads Agency</title>
-    <meta name="description" content="Stop wasting time on LinkedIn. LinkedIn Ascent is a specialist B2B agency that builds high-ROI LinkedIn Ad campaigns and Sales Navigator outreach systems to flood your sales pipeline with qualified leads.">
+    <!-- SEO Meta Tags: Important for Google ranking. Edit these to match your final content. -->
+    <title>Business Elevate 360 | Expert B2B LinkedIn Marketing & Ads Agency</title>
+    <meta name="description" content="Stop wasting time on LinkedIn. Business Elevate 360 is a specialist B2B agency that builds high-ROI LinkedIn Ad campaigns and Sales Navigator outreach systems to flood your sales pipeline with qualified leads.">
     <meta name="keywords" content="LinkedIn advertising agency, B2B lead generation, LinkedIn ads management, Sales Navigator outreach, B2B marketing agency, increase sales pipeline, LinkedIn ROI">
 
-    <!-- Google Fonts: Inter & Poppins for Menu -->
+    <!-- Google Fonts: Inter for body text & Poppins for the menu -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 
     <!-- All Styles are self-contained here -->
     <style>
-        /* --- LinkedIn-Inspired Color Palette --- */
+        /* ==========================================================================
+        1. COLOR PALETTE & THEME VARIABLES
+        This is the most important section for making manual color changes.
+        You can change the hex codes here, and it will update the entire site.
+        ==========================================================================
+        */
+
+        /* --- Primary Color Palette (Your Approved Colors) --- */
         :root {
-            --color-primary: #0A66C2;
-            --color-primary-darker: #004182;
-            --color-navy: #0D1B2A;
-            --color-slate: #334155;
-            --color-light-slate: #64748B;
-            --color-background-light: #F4F6F8; /* Softer than pure white */
-            --color-background-light-subtle: #FFFFFF;
-            --color-background-dark: #0D1B2A;
-            --color-background-dark-subtle: #1B2735;
+            --color-core-blue: #0A66C2;
+            --color-deep-navy: #1B1F3B;
+            --color-soft-sky-blue: #D0E8FF;
+            --color-slate-gray: #6B7280;
+            --color-accent-green: #28A745;
+            --color-accent-green-darker: #218838;
             --color-pure-white: #FFFFFF;
-            --color-accent-gold: #FFD700;
+            --color-medium-dark-blue: #1A3A5A; 
+            --color-cyan-highlight: #4FD1C5;
         }
 
-        /* --- Theme Variables --- */
+        /* --- Light Theme Color Assignments --- */
         html {
-            --bg-color: var(--color-background-light);
-            --bg-subtle-color: var(--color-background-light-subtle);
-            --text-heading-color: var(--color-navy);
-            --text-body-color: var(--color-slate);
-            --border-color: #e2e8f0;
-            --navbar-bg: rgba(244, 246, 248, 0.6);
+            --bg-color: var(--color-soft-sky-blue);
+            --bg-subtle-color: var(--color-pure-white);
+            --text-heading-color: var(--color-deep-navy);
+            --text-body-color: var(--color-slate-gray);
+            --border-color: #dee2e6;
+            --navbar-bg: rgba(255, 255, 255, 0.7);
             --card-shadow: 0 4px 12px rgba(0,0,0,0.05);
             --card-shadow-hover: 0 8px 20px rgba(0,0,0,0.07);
-            --menu-hover-bg: rgba(0,0,0,0.05);
-            --menu-text-color: var(--color-slate);
+            --menu-hover-bg: rgba(10, 102, 194, 0.1);
+            --menu-text-color: var(--color-slate-gray);
+            --hero-bg: var(--color-deep-navy);
+            --hero-text-color: var(--color-pure-white);
         }
 
+        /* --- Dark Theme Color Assignments --- */
         html.dark-mode {
-            --bg-color: var(--color-background-dark);
-            --bg-subtle-color: var(--color-background-dark-subtle);
+            --bg-color: var(--color-medium-dark-blue);
+            --bg-subtle-color: var(--color-deep-navy);
             --text-heading-color: var(--color-pure-white);
-            --text-body-color: #94a3b8;
-            --border-color: #2d3748;
-            --navbar-bg: rgba(27, 39, 53, 0.6);
+            --text-body-color: #A0BBD4;
+            --border-color: #384d64;
+            --navbar-bg: rgba(27, 58, 90, 0.7);
             --card-shadow: 0 4px 12px rgba(0,0,0,0.2);
             --card-shadow-hover: 0 8px 25px rgba(0,0,0,0.3);
-            --menu-hover-bg: rgba(255,255,255,0.08);
-            --menu-text-color: #94a3b8;
+            --menu-hover-bg: rgba(208, 232, 255, 0.1);
+            --menu-text-color: #A0BBD4;
+            --hero-bg: linear-gradient(135deg, var(--color-medium-dark-blue) 0%, var(--color-deep-navy) 100%);
+            --hero-text-color: var(--color-pure-white);
         }
 
-        /* --- BASE & RESET --- */
+        /* ==========================================================================
+        2. BASE STYLES & LAYOUT
+        General styling for the page, fonts, and layout containers.
+        ==========================================================================
+        */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
         body {
@@ -75,26 +89,24 @@
         ul { list-style: none; }
         strong { color: var(--text-heading-color); font-weight: 600; }
 
-        /* --- UTILITY & LAYOUT --- */
         .container {
-            width: 100%;
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+            width: 100%; max-width: 1100px; margin-left: auto;
+            margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem;
         }
         .text-center { text-align: center; }
         
-        /* --- HEADER & NAVBAR --- */
+        /* ==========================================================================
+        3. HEADER & NAVIGATION BAR
+        Styles for the "glass effect" menu, logo, and navigation links.
+        ==========================================================================
+        */
         .header {
             position: fixed; top: 1rem; left: 50%;
             transform: translateX(-50%);
             width: 95%; max-width: 64rem; z-index: 50;
         }
         .navbar {
-            position: relative;
-            background-color: var(--navbar-bg);
+            position: relative; background-color: var(--navbar-bg);
             backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
             border-radius: 999px;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
@@ -105,51 +117,45 @@
         }
 
         .navbar__logo {
-            display: flex; align-items: center; gap: 0.5rem;
-            font-size: 1.25rem; font-weight: 800; color: var(--text-heading-color);
+            display: flex; align-items: center; gap: 0.75rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem; font-weight: 600; color: var(--text-heading-color);
             padding-left: 1rem;
         }
-        .navbar__logo svg { height: 28px; width: auto; }
+        .navbar__logo svg { height: 40px; width: auto; } /* Controls the logo size */
+        
         .navbar__nav { display: none; }
         .navbar__nav-list { display: flex; align-items: center; gap: 0.5rem; }
         .navbar__nav-link { 
-            position: relative;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500; 
-            font-size: 0.95rem;
+            position: relative; font-family: 'Poppins', sans-serif;
+            font-weight: 500; font-size: 0.95rem;
             color: var(--menu-text-color); 
             transition: color 0.2s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 999px;
-            z-index: 1;
+            padding: 0.5rem 1rem; border-radius: 999px; z-index: 1;
         }
         .navbar__nav-link::before {
-            content: '';
-            position: absolute;
+            content: ''; position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             background-color: var(--menu-hover-bg);
-            border-radius: inherit;
-            transform: scale(0.8);
+            border-radius: inherit; transform: scale(0.8);
             opacity: 0;
             transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             z-index: -1;
         }
-        .navbar__nav-link:hover { 
-            color: var(--text-heading-color);
-        }
-        .navbar__nav-link:hover::before {
-            transform: scale(1);
-            opacity: 1;
-        }
+        .navbar__nav-link:hover { color: var(--text-heading-color); }
+        .navbar__nav-link:hover::before { transform: scale(1); opacity: 1; }
+        
         .navbar__actions { display: flex; align-items: center; gap: 0.5rem; }
         .navbar__cta {
-            display: none; background-color: var(--color-primary);
+            display: none; 
+            background-image: linear-gradient(to right, var(--color-accent-green) 0%, var(--color-accent-green-darker) 100%);
             color: white; font-weight: 600; padding: 0.6rem 1.25rem;
             border-radius: 999px; transition: all 0.3s ease;
+            box-shadow: 0 4px 15px 0 rgba(40, 167, 69, 0.4);
         }
-        .navbar__cta:hover { background-color: var(--color-primary-darker); transform: scale(1.05); }
+        .navbar__cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px 0 rgba(40, 167, 69, 0.5); }
 
-        /* Theme Toggle */
+        /* Theme Toggle Button */
         .theme-toggle {
             background-color: transparent; border: none;
             border-radius: 999px; padding: 0.5rem;
@@ -161,11 +167,15 @@
         html.dark-mode #theme-toggle-light-icon { display: block; }
         html.dark-mode #theme-toggle-dark-icon { display: none; }
 
-        /* Hamburger Menu */
+        /* Mobile Hamburger Menu */
         .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; padding: 0.5rem; }
         .hamburger span { width: 24px; height: 3px; background-color: var(--text-heading-color); border-radius: 2px; transition: all 0.3s ease; }
 
-        /* MAIN CONTENT */
+        /* ==========================================================================
+        4. PAGE SECTIONS & COMPONENTS
+        Styles for the individual sections like Hero, Services, Cards, etc.
+        ==========================================================================
+        */
         main { padding-top: 8rem; }
         section { padding: 5rem 0; }
         .section-subtle { 
@@ -184,29 +194,58 @@
         }
 
         /* Hero Section */
+        .hero { background: var(--hero-bg); border-radius: 1.5rem; margin: 0 1rem; padding: 6rem 2rem; }
+        .hero .hero__headline, .hero .hero__subheadline { color: var(--hero-text-color); }
         .hero__grid { display: grid; gap: 3rem; align-items: center; }
         .hero__headline {
-            font-size: 3rem; font-weight: 900; color: var(--text-heading-color);
+            font-size: 3rem; font-weight: 900;
             line-height: 1.2; margin-bottom: 1.5rem;
         }
-        .hero__headline .highlight { color: var(--color-primary); }
-        .hero__subheadline { font-size: 1.2rem; margin: 0 0 2.5rem 0; }
+        .hero__headline .highlight { 
+            color: var(--color-pure-white);
+        }
+        html.dark-mode .hero__headline .highlight {
+             background: -webkit-linear-gradient(45deg, var(--color-pure-white), var(--color-cyan-highlight));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero__subheadline { font-size: 1.2rem; margin: 0 0 2.5rem 0; opacity: 0.9; }
+        
+        /* Buttons */
         .btn {
             font-weight: 600; padding: 0.9rem 2rem; border-radius: 0.5rem;
             transition: all 0.3s ease; border: 1px solid transparent;
             display: inline-block;
         }
         .btn--primary {
-            background-color: var(--color-primary); color: white;
-            box-shadow: 0 4px 14px 0 rgba(10, 102, 194, 0.39);
+            position: relative;
+            background-image: linear-gradient(to right, var(--color-accent-green) 0%, #2E8B57 100%);
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(40, 167, 69, 0.39);
+            overflow: hidden;
         }
-        .btn--primary:hover { background-color: var(--color-primary-darker); transform: translateY(-2px); }
-        
-        /* Service Cards */
+        .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px 0 rgba(40, 167, 69, 0.5); }
+        .btn--primary::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 30px; height: 30px;
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            animation: pulse-aurora 2.5s infinite;
+        }
+        @keyframes pulse-aurora {
+            0% { transform: translate(-50%,-50%) scale(0); opacity: 0.8; }
+            100% { transform: translate(-50%,-50%) scale(8); opacity: 0; }
+        }
+
+        /* Cards */
         .card-grid { display: grid; gap: 2rem; }
         .card {
             background-color: var(--bg-subtle-color);
-            padding: 2rem; border-radius: 0.75rem;
+            padding: 2rem; border-radius: 1rem;
             border: 1px solid var(--border-color);
             box-shadow: var(--card-shadow);
             transition: all 0.3s ease; text-align: left;
@@ -219,20 +258,19 @@
         }
         .card__content { flex-grow: 1; }
         .card__icon {
-            width: 3rem; height: 3rem; background-color: var(--color-soft-sky-blue);
+            width: 3rem; height: 3rem; 
+            background-image: linear-gradient(to right, var(--color-core-blue) 0%, var(--color-deep-navy) 100%);
             border-radius: 0.5rem; margin-bottom: 1.5rem; display: flex;
             align-items: center; justify-content: center;
         }
-        html.dark-mode .card__icon { background-color: var(--color-primary); }
-        .card__icon svg { width: 1.75rem; height: 1.75rem; color: var(--color-primary); }
-        html.dark-mode .card__icon svg { color: var(--color-pure-white); }
+        .card__icon svg { width: 1.75rem; height: 1.75rem; color: var(--color-pure-white); }
         .card__title { font-size: 1.5rem; font-weight: 700; color: var(--text-heading-color); margin-bottom: 1rem; }
         .card p { margin-bottom: 1.5rem; }
         .card ul { list-style: none; padding: 0; }
         .card li { padding-left: 1.75rem; position: relative; margin-bottom: 0.75rem; }
-        .card li::before { content: '✓'; position: absolute; left: 0; color: var(--color-primary); font-weight: 700; }
+        .card li::before { content: '✓'; position: absolute; left: 0; color: var(--color-accent-green); font-weight: 700; }
         
-        /* Process Section */
+        /* Process Timeline */
         .process-timeline { position: relative; max-width: 48rem; margin: 4rem auto 0; }
         .process-timeline::before {
             content: ''; position: absolute; left: 1.25rem; top: 0; bottom: 0;
@@ -244,12 +282,12 @@
             position: absolute; left: 0; top: -5px; width: 2.5rem; height: 2.5rem;
             border: 2px solid var(--border-color); background-color: var(--bg-color);
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-weight: 700; font-size: 1.125rem; color: var(--color-primary);
+            font-weight: 700; font-size: 1.125rem; color: var(--color-core-blue);
             transition: background-color 0.3s ease, border-color 0.3s ease;
         }
         .process-step__title { font-size: 1.25rem; font-weight: 600; color: var(--text-heading-color); margin-bottom: 0.5rem; }
         
-        /* Why Us & Results */
+        /* Why Us & Results Sections */
         .feature-grid { display: grid; gap: 2rem; }
         .feature-item {
             background-color: var(--bg-color);
@@ -258,40 +296,65 @@
         }
         .feature-item__title { font-size: 1.125rem; font-weight: 600; color: var(--text-heading-color); margin-bottom: 0.5rem; }
         .results-grid { display: grid; gap: 2rem; text-align: center; }
-        .results-item__metric { font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem; color: var(--color-primary); }
+        .results-item__metric { 
+            font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem; 
+            color: var(--color-core-blue);
+        }
+        html.dark-mode .results-item__metric {
+            background: -webkit-linear-gradient(45deg, var(--color-pure-white), var(--color-sky-blue-medium));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         .results-item__title { font-size: 1.125rem; font-weight: 500; color: var(--text-body-color); }
-        html.dark-mode .results-item__metric { color: var(--color-pure-white); }
 
-        /* Testimonial */
-        .testimonial { background-color: var(--color-navy); color: white; border-radius: 1rem; padding: 3rem; text-align: center; }
-        .testimonial__image { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.5rem auto; object-fit: cover; }
+        /* Testimonial Section */
+        .testimonial { 
+            background-image: var(--testimonial-bg);
+            color: white; border-radius: 1rem; padding: 3rem; text-align: center;
+        }
+        .testimonial__image { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1.5rem auto; object-fit: cover; border: 3px solid var(--color-core-blue); }
         .testimonial__quote { font-size: 1.25rem; font-weight: 500; line-height: 1.6; max-width: 45rem; margin: 0 auto 1.5rem auto; color: #E2E8F0; }
         .testimonial__author { font-weight: 600; color: var(--color-pure-white); }
         .testimonial__author span { display: block; font-weight: 400; color: #94a3b8; font-size: 0.9rem; }
         
         /* CTA & Footer */
         .cta-box {
-            background-color: var(--bg-subtle-color);
-            border: 1px solid var(--border-color); border-radius: 1rem; padding: 2.5rem; text-align: center;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            background-image: linear-gradient(135deg, var(--color-core-blue) 0%, var(--color-deep-navy) 100%);
+            border-radius: 1rem; padding: 2.5rem; text-align: center;
         }
-        .cta-box .section-subtitle { margin-bottom: 2rem; }
-        .cta-box .btn { font-size: 1.125rem; padding: 1rem 2.5rem; }
+        .cta-box .section-title, .cta-box .section-subtitle {
+            color: var(--color-pure-white);
+        }
+        .cta-box .btn {
+            background-image: linear-gradient(to right, var(--color-accent-green) 0%, #2E8B57 100%);
+            color: var(--color-pure-white);
+            box-shadow: 0 4px 14px 0 rgba(40, 167, 69, 0.39);
+        }
+        .cta-box .btn:hover {
+            box-shadow: 0 6px 20px 0 rgba(40, 167, 69, 0.5);
+        }
+
         .footer { padding: 4rem 0; background-color: var(--bg-subtle-color); border-top: 1px solid var(--border-color); transition: background-color 0.3s ease, border-color 0.3s ease;}
         .footer-grid { display: grid; gap: 2.5rem; text-align: center; }
         .footer__title { font-size: 1.125rem; font-weight: 700; color: var(--text-heading-color); margin-bottom: 1rem; }
         .footer-links { display: flex; flex-direction: column; gap: 0.75rem; }
-        .footer-links a:hover { color: var(--color-primary); }
+        .footer-links a:hover { color: var(--color-core-blue); }
         .footer__copyright {
             margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);
             text-align: center; font-size: 0.9rem;
             transition: border-color 0.3s ease;
         }
         
-        /* Animations */
+        /* ==========================================================================
+        5. ANIMATIONS & RESPONSIVENESS
+        Controls the fade-in animations on scroll and adjusts layout for mobile.
+        ==========================================================================
+        */
         .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
         .reveal-on-scroll.visible { opacity: 1; transform: translateY(0); }
         
+        /* Staggered animation delays for a smoother feel */
         .reveal-on-scroll .card:nth-child(2),
         .reveal-on-scroll .feature-item:nth-child(2),
         .reveal-on-scroll .results-item:nth-child(2),
@@ -302,7 +365,7 @@
         .reveal-on-scroll .results-item:nth-child(4),
         .reveal-on-scroll .feature-item:nth-child(4) { transition-delay: 0.3s; }
         
-        /* RESPONSIVENESS */
+        /* Media queries for different screen sizes */
         @media (min-width: 768px) {
             .navbar__nav, .navbar__cta { display: flex; }
             .hero__grid { grid-template-columns: 1fr 1fr; text-align: left; }
@@ -318,6 +381,7 @@
         }
 
         @media (max-width: 767px) {
+            .hero { margin: 0; border-radius: 0;}
             .hero__headline { font-size: 2.5rem; }
             .section-title { font-size: 2rem; }
             .navbar__nav { display: block; position: absolute; top: 110%; right: 0; background-color: var(--bg-subtle-color); width: 100%; border-radius: 0.75rem; box-shadow: var(--card-shadow); border: 1px solid var(--border-color); max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; }
@@ -329,7 +393,11 @@
             .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
         }
     </style>
-    <!-- Head script to prevent flash of unstyled content (FOUC) -->
+    <!-- 
+        Head script to prevent "flash of unstyled content" (FOUC).
+        It checks for a saved theme in local storage before the page loads
+        to apply the correct theme instantly.
+    -->
     <script>
         (() => {
             const savedTheme = localStorage.getItem('theme');
@@ -348,12 +416,19 @@
 </head>
 <body>
 
+    <!-- ======================= HEADER & NAVIGATION ======================= -->
     <header class="header">
         <nav class="navbar">
-            <a href="linkedin-ascent.html" class="navbar__logo">
-                <svg viewBox="0 0 125 32" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM12.27 10.91H15.27V22.55H12.27V10.91ZM13.77 8.18C14.73 8.18 15.52 8.97 15.52 9.93C15.52 10.89 14.73 11.68 13.77 11.68C12.81 11.68 12.02 10.89 12.02 9.93C12.02 8.97 12.81 8.18 13.77 8.18ZM17.27 10.91H20.18V12.25C20.61 11.42 21.6 10.64 23.05 10.64C26.11 10.64 26.55 12.73 26.55 15.45V22.55H23.55V16.36C23.55 14.82 23.09 13.82 22.02 13.82C20.66 13.82 20.27 14.95 20.27 16.36V22.55H17.27V10.91Z" fill="var(--color-primary)"/>
-                    <text x="42" y="23" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="var(--text-heading-color)">Ascent</text>
+            <a href="business-elevate-360.html" class="navbar__logo">
+                <!-- SVG logo for crisp rendering. The text inside can be edited. -->
+                <svg viewBox="0 0 200 40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" fill="var(--color-core-blue)" stroke="var(--color-deep-navy)" stroke-width="4"/>
+                    <path d="M15 14V26" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M25 18V26" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M20 10V26" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M28 20L32 16" stroke="var(--color-core-blue)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M20 10L28 20" stroke="var(--color-core-blue)" stroke-width="3" stroke-linecap="round"/>
+                    <text x="50" y="28" font-family="Poppins, sans-serif" font-size="20" font-weight="600" fill="var(--text-heading-color)">Business Elevate 360</text>
                 </svg>
             </a>
             <div class="navbar__nav" id="nav-menu">
@@ -378,21 +453,23 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero container reveal-on-scroll">
-            <div class="hero__grid">
-                <div class="hero__text">
-                    <h1 class="hero__headline">Tired of Wasting Money on LinkedIn? We Build <span class="highlight">Revenue Engines.</span></h1>
-                    <p class="hero__subheadline">Stop guessing. LinkedIn Ascent builds <strong>high-performance Ad campaigns</strong> and <strong>automated Sales Navigator outreach systems</strong> that generate a predictable pipeline of qualified, ready-to-talk leads for your B2B business.</p>
-                    <a href="proposal.html" class="btn btn--primary">Get My Free Growth Blueprint</a>
-                </div>
-                <div>
-                    <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/9d311854-3e9a-47d3-bb74-3252a12a8069.png" alt="Abstract data visualization of a business growth chart" style="border-radius: 1rem; width: 100%; height: auto;">
+        <!-- ======================= HERO SECTION ======================= -->
+        <section class="container reveal-on-scroll">
+            <div class="hero">
+                <div class="hero__grid">
+                    <div class="hero__text">
+                        <h1 class="hero__headline">Tired of Wasting Money on LinkedIn? We Build <span class="highlight">Revenue Engines.</span></h1>
+                        <p class="hero__subheadline">Stop guessing. Business Elevate 360 builds <strong>high-performance Ad campaigns</strong> and <strong>automated Sales Navigator outreach systems</strong> that generate a predictable pipeline of qualified, ready-to-talk leads for your B2B business.</p>
+                        <a href="proposal.html" class="btn btn--primary">Get My Free Growth Blueprint</a>
+                    </div>
+                    <div>
+                        <img src="img/1.png" alt="Abstract data visualization of a business growth chart" style="border-radius: 1rem; width: 100%; height: auto;">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- ======================= SERVICES SECTION ======================= -->
         <section id="services" class="section-subtle reveal-on-scroll">
             <div class="container">
                 <div class="text-center">
@@ -413,7 +490,7 @@
                         </div>
                     </div>
                     <div class="card">
-                         <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/96c78822-19e4-440a-a037-12822a16d09e.png" alt="Conceptual image representing sales outreach on a professional network" class="card__image">
+                         <img src="img/3.png" alt="Abstract conceptual image representing sales outreach or networking" class="card__image">
                         <div class="card__content">
                             <h3 class="card__title">Sales Navigator Outreach</h3>
                             <p>We build a powerful, semi-automated outreach system to <strong>book qualified sales meetings on autopilot</strong>, filling your calendar without your team lifting a finger.</p>
@@ -428,7 +505,7 @@
             </div>
         </section>
 
-        <!-- Process Section -->
+        <!-- ======================= PROCESS SECTION ======================= -->
         <section id="process" class="container reveal-on-scroll">
             <div class="text-center">
                 <h2 class="section-title">Our 3-Step Plan to Predictable Growth</h2>
@@ -441,11 +518,11 @@
             </div>
         </section>
 
-        <!-- Why Us Section -->
+        <!-- ======================= WHY US SECTION ======================= -->
         <section id="why-us" class="section-subtle reveal-on-scroll">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title">Why LinkedIn Ascent?</h2>
+                    <h2 class="section-title">Why Business Elevate 360?</h2>
                     <p class="section-subtitle">You have options. Here's why B2B leaders who are serious about growth choose us as their long-term partner.</p>
                 </div>
                 <div class="feature-grid">
@@ -457,16 +534,16 @@
             </div>
         </section>
 
-         <!-- Testimonial Section -->
+         <!-- ======================= TESTIMONIAL SECTION ======================= -->
         <section id="testimonial" class="container reveal-on-scroll">
             <div class="testimonial">
-                <img src="https://storage.googleapis.com/gemini-prod-us-east1-175505075526/images/468b321a-1d54-471a-8323-9524e4f7110c.png" alt="Headshot of Jane Doe" class="testimonial__image">
-                <p class="testimonial__quote">"Working with LinkedIn Ascent was a game-changer. They doubled our qualified leads in the first quarter alone. Their system is the real deal."</p>
+                <img src="img/2.png" alt="Photo of a professional businesswoman" class="testimonial__image">
+                <p class="testimonial__quote">"Working with Business Elevate 360 was a game-changer. They doubled our qualified leads in the first quarter alone. Their system is the real deal."</p>
                 <p class="testimonial__author">Jane Doe <span>CEO, TechSolutions Inc.</span></p>
             </div>
         </section>
 
-        <!-- Results Section -->
+        <!-- ======================= RESULTS SECTION ======================= -->
         <section id="results" class="container reveal-on-scroll">
             <div class="text-center">
                 <h2 class="section-title">The Proof Is In The Pipeline</h2>
@@ -480,54 +557,104 @@
             </div>
         </section>
         
-        <!-- Final CTA Section -->
+        <!-- ======================= FINAL CTA SECTION ======================= -->
         <section id="contact" class="container reveal-on-scroll">
             <div class="cta-box">
                  <h2 class="section-title">Ready to Build Your LinkedIn Revenue Engine?</h2>
                  <p class="section-subtitle">Book a complimentary strategy session. We'll audit your current efforts and deliver a custom Growth Blueprint you can implement immediately. <strong>No pressure. No obligation.</strong></p>
-                 <a href="proposal.html" class="btn btn--primary">Claim My Free Growth Blueprint</a>
+                 <a href="proposal.html" class="btn btn--primary">Get My Free Growth Blueprint</a>
             </div>
         </section>
     </main>
 
+    <!-- ======================= FOOTER ======================= -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div><h3 class="footer__title">LinkedInAscent</h3><p>Your expert partner in B2B LinkedIn Marketing.</p></div>
+                <div><h3 class="footer__title">Business Elevate 360</h3><p>Your expert partner in B2B LinkedIn Marketing.</p></div>
                 <div><h4 class="footer__title">Services</h4><ul class="footer-links"><li><a href="#services">LinkedIn Ads</a></li><li><a href="#services">Sales Navigator Outreach</a></li></ul></div>
                 <div><h4 class="footer__title">Company</h4><ul class="footer-links"><li><a href="#process">Our Process</a></li><li><a href="#why-us">Why Us?</a></li></ul></div>
-                <div><h4 class="footer__title">Contact</h4><p>hello@linkedinascent.com</p></div>
+                <div><h4 class="footer__title">Contact</h4><p>hello@businesselevate360.com</p></div>
             </div>
             <div class="footer__copyright">
-                <p>&copy; <span id="current-year"></span> LinkedIn Ascent. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year"></span> Business Elevate 360. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JS for Animations, Theme Toggle, and Dynamic Content -->
+    <!-- 
+        ==========================================================================
+        JAVASCRIPT
+        Controls animations, theme toggle, mobile menu, and dynamic year.
+        ==========================================================================
+    -->
     <script>
-        // Placed in a self-invoking function to avoid polluting global scope
-        (() => {
-            // Function to apply the theme
+        document.addEventListener('DOMContentLoaded', () => {
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            // Function to apply the theme by toggling a class on the <html> element
             const applyTheme = (theme) => {
-                const htmlEl = document.documentElement;
-                if (theme === 'dark') {
-                    htmlEl.classList.add('dark-mode');
-                } else {
-                    htmlEl.classList.remove('dark-mode');
-                }
+                htmlElement.classList.toggle('dark-mode', theme === 'dark');
+                // We need to re-calculate the background color immediately after a theme change
+                updateBodyBackground(true);
             };
 
             // Event listener for the theme toggle button
-            const themeToggle = document.getElementById('theme-toggle');
             if (themeToggle) {
                 themeToggle.addEventListener('click', () => {
-                    const htmlEl = document.documentElement;
-                    const newTheme = htmlEl.classList.contains('dark-mode') ? 'light' : 'dark';
+                    const newTheme = htmlElement.classList.contains('dark-mode') ? 'light' : 'dark';
                     localStorage.setItem('theme', newTheme);
                     applyTheme(newTheme);
                 });
             }
+
+            // Function to handle the dynamic background color on scroll
+            const updateBodyBackground = () => {
+                const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (scrollableHeight <= 0) { // Prevents division by zero on short pages
+                    const initialColor = htmlElement.classList.contains('dark-mode') 
+                        ? 'rgb(26, 58, 90)' 
+                        : 'rgb(240, 248, 255)';
+                    body.style.backgroundColor = initialColor;
+                    return;
+                };
+                
+                const scrollPercent = Math.min(window.scrollY / scrollableHeight, 1);
+                
+                const style = getComputedStyle(htmlElement);
+                
+                let startColorStr, endColorStr;
+
+                // Select the correct RGB values based on the current theme
+                if (htmlElement.classList.contains('dark-mode')) {
+                    startColorStr = style.getPropertyValue('--bg-scroll-start-dark').trim();
+                    endColorStr = style.getPropertyValue('--bg-scroll-end-dark').trim();
+                } else {
+                    startColorStr = style.getPropertyValue('--bg-scroll-start-light').trim();
+                    endColorStr = style.getPropertyValue('--bg-scroll-end-light').trim();
+                }
+
+                if(startColorStr && endColorStr) {
+                    const startColor = startColorStr.split(',').map(Number);
+                    const endColor = endColorStr.split(',').map(Number);
+                    
+                    if(startColor.length === 3 && endColor.length === 3){
+                        const r = Math.round(startColor[0] + (endColor[0] - startColor[0]) * scrollPercent);
+                        const g = Math.round(startColor[1] + (endColor[1] - startColor[1]) * scrollPercent);
+                        const b = Math.round(startColor[2] + (endColor[2] - startColor[2]) * scrollPercent);
+
+                        body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+                    }
+                }
+            };
+            
+            window.addEventListener('scroll', updateBodyBackground, { passive: true });
+            
+            // Set initial background color correctly on page load
+            updateBodyBackground();
+
 
             // Animations on Scroll
             const observer = new IntersectionObserver((entries) => {
@@ -537,11 +664,12 @@
                     }
                 });
             }, { threshold: 0.1 });
+
             document.querySelectorAll('.reveal-on-scroll').forEach(elem => {
                 observer.observe(elem);
             });
 
-            // Hamburger Menu
+            // Hamburger Menu for Mobile
             const hamburger = document.getElementById('hamburger-menu');
             const navMenu = document.getElementById('nav-menu');
             if (hamburger && navMenu) {
@@ -551,12 +679,12 @@
                 });
             }
 
-            // Dynamic Year
+            // Dynamic Year in Footer
             const yearSpan = document.getElementById('current-year');
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
-        })();
+        });
     </script>
 </body>
 </html>
