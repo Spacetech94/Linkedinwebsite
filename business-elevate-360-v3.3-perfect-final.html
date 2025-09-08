@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Elevate 360 | LinkedIn Marketing & Sales Experts</title>
+    <meta name="description" content="Expert B2B LinkedIn marketing agency driving high-ROI campaigns and sales growth through proven strategies.">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS for Sliders -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        /* ================================
+           BUSINESS ELEVATE 360 - VERSION 3.3 PERFECT
+           Optimized Hero Layout, Enhanced Titles, Perfect Mobile
+        ================================ */
+        
+        :root {
+            /* Progressive Blue Backgrounds */
+            --bg-about: #E3F2FD;
+            --bg-services: #BBDEFB;
+            --bg-problems: #90CAF9;
+            --bg-team: #64B5F6;
+            --bg-success: #42A5F5;
+            --bg-tools: #2196F3;
+            --bg-contact: #1976D2;
+            --bg-footer: #0D47A1;
+            
+            /* Updated CTA Colors */
+            --cta-primary: #FF6F00;
+            --cta-primary-hover: #E65C00;
+            --cta-secondary: #FF3D4E;
+            --cta-secondary-hover: #E6303E;
+            
+            /* LinkedIn-inspired Color Palette */
+            --primary-blue: #1265c5;
+            --deep-blue: #074c92;
+            --medium-blue: #235D85;
+            --bright-blue: #0073B1;
+            --sky-blue: #87CEEB;
+            --light-blue: #E1F5FE;
+            --pale-cyan: #B3E5FC;
+            --teal-accent: #17A2B8;
+            --white: #FFFFFF;
+            --text-dark: #2C3E50;
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            /* Optimized Spacing System */
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 5rem;
+            --space-5xl: 6rem;
+            
+            /* Layout */
+            --max-width: 1200px;
+            --border-radius: 12px;
+            --border-radius-sm: 6px;
+            --border-radius-lg: 20px;
+            
+            /* Enhanced Shadows */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.16);
+            --shadow-enhanced: 0 4px 24px rgba(20, 40, 90, 0.10);
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Container System */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-white { color: var(--white); }
+
+        /* Enhanced Button System with Animated Border */
+        .btn--primary {
+            background: var(--cta-primary);
+            color: var(--white);
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: var(--border-radius-lg);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            position: relative;
+            overflow: hidden;
+            border: 3px solid transparent;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn--primary:hover {
+            background: var(--cta-primary-hover);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--sky-blue);
+            animation: borderPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes borderPulse {
+            0%, 100% {
+                border-color: var(--sky-blue);
+                box-shadow: 0 0 20px rgba(135, 206, 235, 0.6), 0 12px 32px rgba(0, 0, 0, 0.16);
+            }
+            50% {
+                border-color: var(--primary-blue);
+                box-shadow: 0 0 30px rgba(18, 101, 197, 0.8), 0 16px 40px rgba(0, 0, 0, 0.20);
+            }
+        }
+
+        .btn--secondary {
+            background: var(--cta-secondary);
+            color: var(--white);
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: var(--border-radius-lg);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            border: 3px solid transparent;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn--secondary:hover {
+            background: var(--cta-secondary-hover);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--sky-blue);
+            animation: borderPulse 2s ease-in-out infinite;
+        }
+
+        /* ================================
+           HEADER & NAVIGATION
+        ================================ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1943ffab;
+            box-shadow: var(--shadow-md);
+            z-index: 1000;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 1;
+        }
+
+        .header.scrolled {
+            opacity: 0.95;
+        }
+
+        .header.scrolled:hover {
+            opacity: 1;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            padding: 0 var(--space-lg);
+        }
+
+        .navbar__logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        /* Logo Image - images/logo.png - Blended with header */
+        .navbar__logo-image {
+            height: 55px;
+            width: auto;
+            filter: brightness(1.1);
+        }
+
+        .navbar__nav {
+            display: flex;
+            list-style: none;
+            gap: var(--space-lg);
+        }
+
+        .navbar__nav-link {
+            font-family: var(--font-secondary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--white);
+            text-decoration: none;
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--border-radius-sm);
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        .navbar__nav-link:hover,
+        .navbar__nav-link.active {
+            color: var(--sky-blue);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar__cta {
+            background: var(--cta-primary);
+            color: var(--white);
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+            letter-spacing: 0.5px;
+            border: 2px solid transparent;
+        }
+
+        .navbar__cta:hover {
+            background: var(--cta-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--sky-blue);
+            animation: borderPulse 2s ease-in-out infinite;
+        }
+
+        /* Mobile Navigation */
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* ================================
+           HERO SECTION - PERFECT LAYOUT
+        ================================ */
+        .hero {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: calc(70px + 1rem) 0 var(--space-xl);
+            position: relative;
+            overflow: hidden;
+            min-height: 65vh;
+        }
+
+        /* Circular Focal Gradient Behind Hero */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle at center, rgba(135, 206, 235, 0.15) 0%, rgba(18, 101, 197, 0.05) 40%, transparent 70%);
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2xl);
+            min-height: 50vh;
+            position: relative;
+            z-index: 2;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        /* Hero Image Section - Perfect Fit */
+        .hero-image {
+            flex: 0 0 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 700px;
+        }
+
+        /* Image: images/Hero.jpg - Perfect Container Fit */
+        .hero-image img {
+            width: 100%;
+            height: 400px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.05);
+            object-fit: cover;
+            object-position: center;
+            border: 6px solid #B9F2FF;
+        }
+
+        /* Hero Text Section - Right Next to Image */
+        .hero-text {
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: var(--space-xl);
+            animation: slideInFromRight 1s ease-out;
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-title {
+            font-family: var(--font-secondary);
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-highlight {
+            color: var(--sky-blue);
+            display: block;
+            font-weight: 800;
+            margin-top: var(--space-sm);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: var(--space-xl);
+            opacity: 0.95;
+        }
+
+        /* ================================
+           ENHANCED SECTION TITLES
+        ================================ */
+        .section-title {
+            font-family: var(--font-secondary);
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: var(--space-xl);
+            position: relative;
+            display: inline-block;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cta-primary), var(--teal-accent));
+            border-radius: 2px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            max-width: 100%;
+            margin: 0 auto;
+            line-height: 1.7;
+            margin-top: var(--space-md);
+        }
+
+        /* ================================
+           ABOUT US SECTION
+        ================================ */
+        .about-section {
+            background: var(--bg-about);
+            padding: var(--space-4xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Circular Focal Gradient Behind About */
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(227, 242, 253, 0.8) 0%, rgba(187, 222, 251, 0.4) 50%, transparent 80%);
+            z-index: 1;
+        }
+
+        .about-content {
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-description {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            margin-bottom: var(--space-2xl);
+            color: var(--text-dark);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .metrics-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 24px;
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            box-shadow: var(--shadow-enhanced);
+            backdrop-filter: blur(10px);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .metric-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-enhanced);
+            border: 1px solid #e1eaff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .metric-number {
+            font-family: var(--font-secondary);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--cta-primary);
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        /* ================================
+           SERVICES SECTION
+        ================================ */
+       
+.services-section {
+  background: var(--bg-services);
+  padding: var(--space-4xl) 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-family: var(--font-secondary);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cta-primary), var(--teal-accent));
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.7;
+  margin-top: var(--space-md);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: var(--space-xl);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 380px;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--teal-accent));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto var(--space-lg);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-md);
+  object-fit: contain;
+}
+
+.service-title {
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: var(--space-md);
+  line-height: 1.3;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-description {
+  color: var(--text-dark);
+  line-height: 1.6;
+  opacity: 0.9;
+  font-size: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+        /* ================================
+           PROBLEMS SECTION
+        ================================ */
+       .animated-box {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 2.2rem 2.5rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(32, 115, 220, 0.07);
+}
+
+/* Animated Gradient Border */
+.animated-box::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 18px;
+    padding: 2px;
+    background: linear-gradient(90deg, #f59842, #49c5b6, #fc466b, #3f5efb);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: border-animate 4s linear infinite;
+}
+
+@keyframes border-animate {
+    0% { background-position: 0 0; }
+    100% { background-position: 500px 0; }
+}
+
+.section-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #2073dc;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+ .problems-section {
+            background: var(--bg-problems);
+            padding: var(--space-4xl) 0;
+        }
+
+        .problems-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .problems-description-card {
+            background: var(--white);
+            box-shadow: var(--shadow-enhanced);
+            border-radius: 20px;
+            padding: var(--space-2xl);
+            max-width: 800px;
+            margin: 0 auto var(--space-2xl) auto;
+            color: var(--text-dark);
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 1.7;
+            border: 1px solid #e1eaff;
+        }
+
+        .problems-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-2xl) 0;
+            text-align: left;
+        }
+
+        .problem-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-lg);
+            padding: var(--space-xl);
+            background: var(--light-blue);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--teal-accent);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease;
+        }
+
+        .problem-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .problem-icon {
+            font-size: 1.8rem;
+            color: var(--teal-accent);
+            margin-top: var(--space-xs);
+        }
+
+        .problem-text {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .problems-conclusion {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-top: var(--space-2xl);
+            text-align: center;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInCenter 1.2s forwards 0.5s;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .problems-conclusion::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--cta-primary), var(--cta-secondary));
+            border-radius: 2px;
+            animation: underlineGrow 0.8s forwards 1.5s;
+            opacity: 0;
+        }
+
+        @keyframes slideInCenter {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes underlineGrow {
+            to {
+                opacity: 1;
+                transform: translateX(-50%) scaleX(1);
+            }
+        }
+
+        /* ================================
+           TEAM SECTION
+        ================================ */
+        .section-titles {
+    font-size: 2.5rem;                 /* Large, bold font */
+    font-weight: 800;                  /* Strong boldness */
+    color: #2073dc;                    /* Deep blue (adjust to your brand color) */
+    text-align: center;
+    margin-bottom: 0.2em;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 2px 8px rgba(32, 115, 220, 0.15); /* Soft blue shadow */
+    line-height: 1.2;
+}
+
+.section-underline span {
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 18px auto 0 auto;
+    background: linear-gradient(90deg, #f59842 0%, #49c5b6 100%);
+    border-radius: 3px;
+}
+.team-section {
+            background: var(--bg-team);
+            padding: var(--space-4xl) 0;
+            color: var(--white);
+        }
+
+        .team-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .founder-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            color: var(--text-dark);
+        }
+
+        .founder-name {
+            font-family: var(--font-secondary);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .founder-title {
+            font-size: 1.2rem;
+            color: var(--teal-accent);
+            margin-bottom: var(--space-lg);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        .expertise-item {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            color: var(--text-dark);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .expertise-emoji {
+            font-size: 2.8rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .expertise-title {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: var(--space-sm);
+            font-size: 1.2rem;
+        }
+
+        .expertise-desc {
+            font-size: 1rem;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        /* ================================
+           SUCCESS STORIES SECTION
+        ================================ */
+        .success-section {
+            background: var(--bg-success);
+            padding: var(--space-4xl) 0;
+            color: var(--white);
+        }
+
+        .testimonial-slider {
+            margin-top: var(--space-2xl);
+            padding: var(--space-lg) 0;
+        }
+
+        .testimonial-card {
+            background: var(--light-blue);
+            border-radius: var(--border-radius);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border-top: 4px solid var(--teal-accent);
+            color: var(--text-dark);
+            margin: 0 var(--space-sm);
+            text-align: center;
+        }
+
+        /* Testimonial Images - images/Testimonials/ */
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 auto var(--space-md);
+            object-fit: cover;
+            box-shadow: var(--shadow-sm);
+            border: 3px solid var(--white);
+        }
+
+        .testimonial-quote {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: var(--space-lg);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1rem;
+        }
+
+        .testimonial-company {
+            color: var(--teal-accent);
+            font-size: 0.95rem;
+        }
+
+        /* ================================
+           TOOLS SECTION
+        ================================ */
+        .tools-section {
+            background: var(--bg-tools);
+            padding: var(--space-4xl) 0;
+            color: var(--white);
+        }
+
+        .tools-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tech-slider {
+            margin: var(--space-2xl) 0;
+            padding: var(--space-lg) 0;
+        }
+
+        .tech-slider .swiper-slide {
+            width: auto;
+        }
+
+        .tech-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
+            min-width: 220px;
+            margin: 0 var(--space-sm);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Technology Tool Icons - images/TechnologyToolIcons/ */
+        .tech-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--space-md);
+            background: var(--bg-services);
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--primary-blue);
+        }
+
+        .tech-name {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1rem;
+        }
+
+        .partners-section {
+            margin-top: var(--space-3xl);
+        }
+
+        .partners-title {
+            font-family: var(--font-secondary);
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--white);
+            text-align: center;
+            margin-bottom: var(--space-xl);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .partner-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .partner-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Partner Logos - images/CertifiedPartnerLogos/ */
+        .partner-logo {
+            width: 120px;
+            height: 60px;
+            margin: 0 auto var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: contain;
+        }
+
+        .partner-name {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+        }
+
+        /* ================================
+           CONTACT SECTION
+        ================================ */
+        .contact-section {
+            background: var(--bg-contact);
+            padding: var(--space-4xl) 0;
+            color: var(--white);
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-form-card {
+            background: var(--bg-about);
+            border-radius: var(--border-radius);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        .contact-title {
+            font-family: var(--font-secondary);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: var(--space-md);
+            border: 2px solid var(--primary-blue);
+            border-radius: var(--border-radius-sm);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            background: var(--white);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--cta-primary);
+            box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.2);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--cta-primary);
+            color: var(--white);
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+            letter-spacing: 0.5px;
+            border: 3px solid transparent;
+        }
+
+        .form-submit:hover {
+            background: var(--cta-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--sky-blue);
+            animation: borderPulse 2s ease-in-out infinite;
+        }
+
+        .form-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+            animation: none;
+        }
+
+        .form-error {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: var(--space-xs);
+            display: none;
+        }
+
+        /* ================================
+           FOOTER
+        ================================ */
+        .footer {
+            background: var(--bg-footer);
+            color: var(--white);
+            padding: var(--space-2xl) 0 var(--space-lg);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-section h4 {
+            font-family: var(--font-secondary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--sky-blue);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--sky-blue);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--sky-blue);
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.8;
+        }
+
+        /* ================================
+           ANIMATIONS
+        ================================ */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================================
+           RESPONSIVE DESIGN - PERFECT MOBILE
+        ================================ */
+        @media (max-width: 1200px) {
+            .hero-content {
+                max-width: 100%;
+                gap: var(--space-xl);
+            }
+            
+            .hero-image {
+                flex: 0 0 55%;
+            }
+            
+            .hero-text {
+                flex: 0 0 45%;
+                padding-left: var(--space-lg);
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-content {
+                flex-direction: column;
+                gap: var(--space-xl);
+                text-align: center;
+                padding: 0 var(--space-lg);
+            }
+            
+            .hero-image {
+                flex: 1;
+                max-width: 600px;
+            }
+            
+            .hero-image img {
+                height: 350px;
+            }
+            
+            .hero-text {
+                flex: 1;
+                max-width: 100%;
+                padding-left: 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-lg);
+            }
+
+            .expertise-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar__nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-blue);
+                flex-direction: column;
+                gap: 0;
+                padding: var(--space-lg);
+                box-shadow: var(--shadow-lg);
+                z-index: 999;
+                backdrop-filter: blur(10px);
+            }
+
+            .navbar__nav.active {
+                display: flex;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .navbar__cta {
+                font-size: 0.8rem;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: calc(70px + 1rem) 0 var(--space-xl);
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                gap: var(--space-lg);
+                min-height: auto;
+                text-align: center;
+            }
+            
+            .hero-image {
+                order: 1;
+                max-width: 100%;
+            }
+            
+            .hero-image img {
+                height: 280px;
+            }
+            
+            .hero-text {
+                order: 2;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .services-grid,
+            .expertise-grid,
+            .partners-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+                margin-top: var(--space-xl);
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-md);
+            }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .problems-list {
+                grid-template-columns: 1fr;
+            }
+
+            .service-icon {
+                width: 150px;
+                height: 150px;
+            }
+
+            .service-card {
+                min-height: 320px;
+                padding: var(--space-lg);
+            }
+
+            .btn--primary,
+            .btn--secondary {
+                padding: 0.9rem 1.8rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.9rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .contact-form-card {
+                padding: var(--space-lg);
+            }
+
+            .service-card,
+            .expertise-item {
+                min-height: 280px;
+                padding: var(--space-md);
+            }
+            
+            .service-icon {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .service-title,
+            .expertise-title {
+                font-size: 1.1rem;
+                min-height: 50px;
+            }
+
+            .problems-conclusion {
+                font-size: 1.6rem;
+            }
+
+            .hero-image img {
+                height: 240px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+
+            .btn--primary,
+            .btn--secondary {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Accessibility - Respect prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            .problems-conclusion {
+                animation: none;
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            .problems-conclusion::after {
+                animation: none;
+                opacity: 1;
+            }
+            
+            .fade-in {
+                transition: none;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .hero-text {
+                animation: none;
+            }
+            
+            * {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="navbar__logo">
+                <!-- Logo Image: images/logo.png - Blended with header background -->
+                <img src="images/logo.png" alt="Business Elevate 360 - LinkedIn Marketing Experts Logo" class="navbar__logo-image">
+            </a>
+            <ul class="navbar__nav" id="navbar-nav">
+                <li><a href="#about" class="navbar__nav-link">About Us</a></li>
+                <li><a href="#services" class="navbar__nav-link">Services</a></li>
+                <li><a href="#problems" class="navbar__nav-link">Problems</a></li>
+                <li><a href="#team" class="navbar__nav-link">Team</a></li>
+                <li><a href="#success" class="navbar__nav-link">Success Stories</a></li>
+                <li><a href="#contact" class="navbar__nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="navbar__cta">BOOK A CALL</a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION - PERFECT LAYOUT -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Hero Image Section - Perfect Container Fit -->
+            <div class="hero-image">
+                <!-- Image: images/Hero.jpg -->
+                <img src="images/Hero.jpg" alt="Professional business team analyzing LinkedIn marketing data and revenue growth analytics on multiple screens in modern office">
+            </div>
+            
+            <!-- Hero Text Section - Right Next to Image -->
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">
+                    Tired of Wasting Money on LinkedIn?
+                    <span class="hero-highlight">We Build Revenue Engines</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Business Elevate 360 drives high-ROI LinkedIn Ads and automated outreach to flood your pipeline with qualified leads.
+                </p>
+                <a href="#contact" class="btn--primary hero-cta">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    BOOK A CALL
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="section-header">
+                    <h2 class="section-title">Transform Your LinkedIn Into a Revenue Machine</h2>
+                    <p class="section-subtitle">
+                        As LinkedIn specialists, we transform professional networks into profit. Our proven systems have generated over <strong>$50M+</strong> in pipeline, managed <strong>100+</strong> brands across <strong>15+</strong> countries, and achieved an average <strong>312%</strong> ROI within six months.
+                    </p>
+                </div>
+                <div class="metrics-container">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-number">$50M+</span>
+                            <div class="metric-label">Pipeline Generated</div>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-number">100+</span>
+                            <div class="metric-label">Brands Managed</div>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-number">15+</span>
+                            <div class="metric-label">Countries</div>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-number">312%</span>
+                            <div class="metric-label">Avg. ROI in 6 Months</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn--secondary">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    Get Your Free LinkedIn Audit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">Proven LinkedIn Growth Solutions That Deliver Results</h2>
+      <p class="section-subtitle">
+        Four core offerings designed to accelerate your LinkedIn marketing and sales growth with measurable outcomes
+      </p>
+    </div>
+    <div class="services-grid">
+      <!-- Service 1: LinkedIn Ads Growth -->
+      <article class="service-card fade-in" role="region" aria-labelledby="service-ads-title">
+        <img src="images/ServiceIcons/icon1.png" alt="LinkedIn Ads Growth icon" class="service-icon" />
+        <h3 id="service-ads-title" class="service-title">LinkedIn Ads Growth</h3>
+        <p class="service-description">
+          Precision-targeted LinkedIn advertising campaigns that generate high-quality leads and maximize your ROI.
+        </p>
+      </article>
+
+      <!-- Service 2: LinkedIn Outreach -->
+      <article class="service-card fade-in" role="region" aria-labelledby="service-outreach-title">
+        <img src="images/ServiceIcons/icon2.png" alt="LinkedIn Outreach icon" class="service-icon" />
+        <h3 id="service-outreach-title" class="service-title">LinkedIn Outreach</h3>
+        <p class="service-description">
+          Automated, personalized outreach sequences that connect with decision-makers and book qualified meetings.
+        </p>
+      </article>
+
+      <!-- Service 3: Thought Leadership & Content -->
+      <article class="service-card fade-in" role="region" aria-labelledby="service-content-title">
+        <img src="images/ServiceIcons/icon3.png" alt="Thought Leadership and Content icon" class="service-icon" />
+        <h3 id="service-content-title" class="service-title">Thought Leadership & Content</h3>
+        <p class="service-description">
+          Strategic content creation and social media management to establish your authority in your industry.
+        </p>
+      </article>
+
+      <!-- Service 4: B2B Sales Strategy -->
+      <article class="service-card fade-in" role="region" aria-labelledby="service-strategy-title">
+        <img src="images/ServiceIcons/icon4.png"  class="service-icon" />
+        <h3 id="service-strategy-title" class="service-title">B2B Sales Strategy</h3>
+        <p class="service-description">
+          Comprehensive sales strategy development to optimize your entire LinkedIn marketing funnel.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- PROBLEMS SECTION -->
+    <section id="problems" class="problems-section">
+        <div class="container">
+            <div class="problems-content fade-in">
+                <div class="section-header">
+                    <h2 class="section-title">Why Most LinkedIn Strategies Fail and Cost You Deals?</h2>
+                </div>
+                <div class="problems-description-card">
+                    <p>Most LinkedIn strategies fail because they're built on hope, not systems. Random posting and spray-and-pray outreach doesn't just waste time—it destroys your professional reputation and tanks your ROI.</p>
+                </div>
+                <div class="problems-list">
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        </div>
+                        <div class="problem-text">
+                            <strong>Damaged brand reputation</strong> from generic outreach that makes you look like spam
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                        </div>
+                        <div class="problem-text">
+                            <strong>Wasted ad spend</strong> on unqualified traffic that never converts to revenue
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-user-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="problem-text">
+                            <strong>Missed opportunities</strong> with decision-makers who could transform your business
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-battery-empty" aria-hidden="true"></i>
+                        </div>
+                        <div class="problem-text">
+                            <strong>Team burnout</strong> from inconsistent results and constantly changing strategies
+                        </div>
+                    </div>
+                </div>
+                <div class="problems-conclusion">
+                    <div class="animated-box">
+    <h1 class="section-title">That's where we come in.</h1>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="team-content fade-in">
+                <div class="section-header">
+                    <h2 class="section-title text-center">Meet Your LinkedIn Success Dream Team</h2>
+                </div>
+                <div class="founder-card">
+                    <h3 class="founder-name"> MR _ XxX _<br> LinkedIn Growth Strategist</h3>
+                    <div class="founder-title">LinkedIn Marketing Expert</div>
+                    <ul style="text-align: left; max-width: 500px; margin: 0 auto;">
+                        <li>   <b>6+</b> years LinkedIn specialization</li>
+                        <li>   LinkedIn Marketing Expert <b>Certified</b></li>
+                        <li>   Former <b>B2B sales leader </b> at Emirates </li>
+                        <li>   Managed <B>$50M+</B>  in client pipeline generation</li>
+                    </ul>
+                </div>
+                <div class="section-header">
+                    <h1 class="section-titles">
+    Meet Our Elite Team of Industry Experts
+</h1>
+<div class="section-underline"><span></span></div>
+
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-emoji" aria-hidden="true">👨‍💼</div>
+                        <h4 class="expertise-title">Paid Media Specialists</h4>
+                        <p class="expertise-desc">LinkedIn Ads certified with 3+ years platform experience</p>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-emoji" aria-hidden="true">📈</div>
+                        <h4 class="expertise-title">Growth Strategists</h4>
+                        <p class="expertise-desc">Former sales leaders who understand B2B buying behavior</p>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-emoji" aria-hidden="true">✍️</div>
+                        <h4 class="expertise-title">Content Creators</h4>
+                        <p class="expertise-desc">Industry experts who craft scroll-stopping LinkedIn content</p>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-emoji" aria-hidden="true">🎯</div>
+                        <h4 class="expertise-title">Data Analysts</h4>
+                        <p class="expertise-desc">Track, optimize, and scale what drives real business results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS STORIES SECTION -->
+    <section id="success" class="success-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Real Client Success Stories That Speak Volumes</h2>
+                <p class="section-subtitle">Proven results from real clients who transformed their LinkedIn presence into revenue machines</p>
+            </div>
+            <!-- Testimonial Images Section -->
+            <div class="testimonial-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <!-- Image: images/Testimonials/testimonial1.jpg -->
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b9a08a40?w=70&h=70&fit=crop&crop=face" alt="Sarah Chen, Head of Sales at TechFlow Solutions - professional headshot" class="testimonial-avatar">
+                                <p class="testimonial-quote">
+                                    "Business Elevate 360 generated 47 qualified leads in 90 days, leading to $380K in closed revenue."
+                                </p>
+                                <div class="testimonial-author">Sarah Chen, Head of Sales</div>
+                                <div class="testimonial-company">TechFlow Solutions (UK)</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <!-- Image: images/Testimonials/testimonial2.jpg -->
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=70&h=70&fit=crop&crop=face" alt="Marcus Weber, CEO at Industrial Automation GmbH - professional headshot" class="testimonial-avatar">
+                                <p class="testimonial-quote">
+                                    "They transformed our LinkedIn presence from zero to industry authority. Now we're getting inbound inquiries weekly."
+                                </p>
+                                <div class="testimonial-author">Marcus Weber, CEO</div>
+                                <div class="testimonial-company">Industrial Automation GmbH (Germany)</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <!-- Image: images/Testimonials/testimonial3.jpg -->
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=70&h=70&fit=crop&crop=face" alt="Jennifer Rodriguez, CMO at CloudScale Analytics - professional headshot" class="testimonial-avatar">
+                                <p class="testimonial-quote">
+                                    "ROI of 312% in the first 6 months. Best marketing investment we've ever made."
+                                </p>
+                                <div class="testimonial-author">Jennifer Rodriguez, CMO</div>
+                                <div class="testimonial-company">CloudScale Analytics (USA)</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <!-- Image: images/Testimonials/testimonial4.jpg -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=70&h=70&fit=crop&crop=face" alt="David Thompson, Partner at Thompson & Associates Consulting - professional headshot" class="testimonial-avatar">
+                                <p class="testimonial-quote">
+                                    "Finally, a team that understands B2B sales cycles and speaks our language."
+                                </p>
+                                <div class="testimonial-author">David Thompson, Partner</div>
+                                <div class="testimonial-company">Thompson & Associates Consulting (Canada)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGY SECTION -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="fade-in">
+                <div class="section-header">
+                    <h2 class="section-title">Powered By Enterprise-Grade Technology Stack</h2>
+                    <p class="section-subtitle">Our comprehensive tech arsenal ensures maximum performance, precision, and results</p>
+                </div>
+                
+                <!-- Technology Tools Images Section -->
+                <div class="tech-slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/linkedin-sales-navigator.png -->
+                                    <div class="tech-icon" aria-hidden="true">💼</div>
+                                    <div class="tech-name">LinkedIn Sales Navigator</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/linkedin-campaign-manager.png -->
+                                    <div class="tech-icon" aria-hidden="true">📊</div>
+                                    <div class="tech-name">LinkedIn Campaign Manager</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/hubspot-crm.png -->
+                                    <div class="tech-icon" aria-hidden="true">🔧</div>
+                                    <div class="tech-name">HubSpot CRM</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/salesforce.png -->
+                                    <div class="tech-icon" aria-hidden="true">⚡</div>
+                                    <div class="tech-name">Salesforce Integration</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/outreach-io.png -->
+                                    <div class="tech-icon" aria-hidden="true">📧</div>
+                                    <div class="tech-name">Outreach.io</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/apollo-sequences.png -->
+                                    <div class="tech-icon" aria-hidden="true">🎯</div>
+                                    <div class="tech-name">Apollo Sequences</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/google-analytics.png -->
+                                    <div class="tech-icon" aria-hidden="true">📈</div>
+                                    <div class="tech-name">Google Analytics 4</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tech-card">
+                                    <!-- Image: images/TechnologyToolIcons/zapier.png -->
+                                    <div class="tech-icon" aria-hidden="true">🔗</div>
+                                    <div class="tech-name">Zapier Workflows</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- Certified Partners Images Section -->
+                <div class="partners-section">
+                    <h3 class="partners-title">Official Certified Partners</h3>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <!-- Image: images/CertifiedPartnerLogos/linkedin-partner.png -->
+                            <img src="https://content.linkedin.com/content/dam/brand/site/img/logo/logo-tm.png" alt="LinkedIn Marketing Partner official certification logo" class="partner-logo">
+                            <div class="partner-name">LinkedIn Marketing Partner</div>
+                        </div>
+                        <div class="partner-card">
+                            <!-- Image: images/CertifiedPartnerLogos/hubspot-partner.png -->
+                            <img src="images/CertifiedPartnerLogos/HubSpot-Emblem.png" alt="HubSpot Partner official certification logo" class="partner-logo">
+                            <div class="partner-name">HubSpot Partner</div>
+                        </div>
+                        <div class="partner-card">
+                            <!-- Image: images/CertifiedPartnerLogos/google-partner.png -->
+                            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Partner official certification logo" class="partner-logo">
+                            <div class="partner-name">Google Partner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-form-card fade-in">
+                <h2 class="contact-title">Ready to Transform Your LinkedIn Results?</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Full Name *" required aria-label="Full Name">
+                        <div class="form-error" id="name-error">Please enter your full name</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Email Address *" required aria-label="Email Address">
+                        <div class="form-error" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" class="form-input" placeholder="Company Name *" required aria-label="Company Name">
+                        <div class="form-error" id="company-error">Please enter your company name</div>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" class="form-select" aria-label="Select Service of Interest">
+                            <option value="">Select Service of Interest</option>
+                            <option value="linkedin-ads">LinkedIn Ads Growth</option>
+                            <option value="linkedin-outreach">LinkedIn Outreach</option>
+                            <option value="thought-leadership">Thought Leadership & Content</option>
+                            <option value="b2b-strategy">B2B Sales Strategy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class=ht"form-textarea" placeholder="Your Message *" required aria-label="Your Message"></textarea>
+                        <div class="form-error" id="message-error">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Send Message & Get Free Audit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Business Elevate 360</h4>
+                    <p>Expert LinkedIn marketing & sales strategies to accelerate your B2B growth and revenue generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">LinkedIn Ads Growth</a></li>
+                        <li><a href="#services">LinkedIn Outreach</a></li>
+                        <li><a href="#services">Thought Leadership</a></li>
+                        <li><a href="#services">B2B Sales Strategy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <p>Email: contact@businesselevate360.com</p>
+                        <p>Phone: +1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Business Elevate 360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS for Sliders -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // ================================
+        // BUSINESS ELEVATE 360 - VERSION 3.3 PERFECT
+        // Enhanced with perfect mobile optimization
+        // ================================
+
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Header elements
+            const header = document.getElementById('header');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navbarNav = document.getElementById('navbar-nav');
+
+            // Initialize Testimonials Slider
+            const testimonialSwiper = new Swiper('.testimonial-slider .swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.testimonial-slider .swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.testimonial-slider .swiper-button-next',
+                    prevEl: '.testimonial-slider .swiper-button-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+
+            // Initialize Technology Slider
+            const techSwiper = new Swiper('.tech-slider .swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.tech-slider .swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.tech-slider .swiper-button-next',
+                    prevEl: '.tech-slider .swiper-button-prev',
+                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+
+            // Mobile Navigation Toggle with Animation
+            mobileToggle.addEventListener('click', function() {
+                navbarNav.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+            });
+
+            // Enhanced Navigation with Dynamic Transparency
+            let lastScrollTop = 0;
+            const heroSection = document.getElementById('home');
+            
+            function handleScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+                
+                // Add/remove scrolled class based on scroll position
+                if (scrollTop > heroBottom - 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Hide/show header on scroll direction
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }
+
+            // Throttled scroll event
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(handleScroll);
+                    ticking = true;
+                    setTimeout(() => { ticking = false; }, 10);
+                }
+            });
+
+            // Smooth Scrolling for Navigation Links with Proper Offset
+            const navLinks = document.querySelectorAll('.navbar__nav-link, .navbar__cta, .hero-cta, .btn--secondary');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const headerOffset = 80;
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Update active link
+                        document.querySelectorAll('.navbar__nav-link').forEach(navLink => {
+                            navLink.classList.remove('active');
+                        });
+                        
+                        if (this.classList.contains('navbar__nav-link')) {
+                            this.classList.add('active');
+                        }
+                        
+                        // Close mobile menu
+                        navbarNav.classList.remove('active');
+                        mobileToggle.classList.remove('active');
+                    }
+                });
+            });
+
+            // Enhanced Fade In Animation on Scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Enhanced Form Validation and Submission
+            const contactForm = document.getElementById('contact-form');
+            const formFields = {
+                name: document.getElementById('name'),
+                email: document.getElementById('email'),
+                company: document.getElementById('company'),
+                message: document.getElementById('message')
+            };
+
+            // Email validation regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Enhanced validate individual field function
+            function validateField(fieldName, field) {
+                const errorElement = document.getElementById(`${fieldName}-error`);
+                let isValid = true;
+
+                // Reset error state
+                errorElement.style.display = 'none';
+                field.style.borderColor = 'var(--primary-blue)';
+
+                // Validate based on field type
+                if (!field.value.trim()) {
+                    isValid = false;
+                    errorElement.style.display = 'block';
+                    field.style.borderColor = '#dc3545';
+                } else if (fieldName === 'email' && !emailRegex.test(field.value)) {
+                    isValid = false;
+                    errorElement.textContent = 'Please enter a valid email address';
+                    errorElement.style.display = 'block';
+                    field.style.borderColor = '#dc3545';
+                } else if (fieldName === 'name' && field.value.trim().length < 2) {
+                    isValid = false;
+                    errorElement.textContent = 'Name must be at least 2 characters long';
+                    errorElement.style.display = 'block';
+                    field.style.borderColor = '#dc3545';
+                } else if (fieldName === 'message' && field.value.trim().length < 10) {
+                    isValid = false;
+                    errorElement.textContent = 'Message must be at least 10 characters long';
+                    errorElement.style.display = 'block';
+                    field.style.borderColor = '#dc3545';
+                } else {
+                    // Field is valid - show success state
+                    field.style.borderColor = 'var(--cta-primary)';
+                }
+
+                return isValid;
+            }
+
+            // Add real-time validation
+            Object.keys(formFields).forEach(fieldName => {
+                const field = formFields[fieldName];
+                if (field) {
+                    field.addEventListener('blur', () => validateField(fieldName, field));
+                    field.addEventListener('input', () => {
+                        const errorElement = document.getElementById(`${fieldName}-error`);
+                        if (errorElement && errorElement.style.display === 'block') {
+                            validateField(fieldName, field);
+                        }
+                    });
+                }
+            });
+
+            // Enhanced form submission with loading state
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    let formIsValid = true;
+
+                    // Validate all required fields
+                    Object.keys(formFields).forEach(fieldName => {
+                        if (formFields[fieldName] && !validateField(fieldName, formFields[fieldName])) {
+                            formIsValid = false;
+                        }
+                    });
+
+                    if (formIsValid) {
+                        const submitButton = contactForm.querySelector('.form-submit');
+                        const originalText = submitButton.innerHTML;
+                        
+                        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                        submitButton.disabled = true;
+                        submitButton.style.opacity = '0.7';
+
+                        setTimeout(() => {
+                            alert('Thank you for contacting Business Elevate 360! We\'ll send you a free LinkedIn audit within 24 hours.');
+                            contactForm.reset();
+                            submitButton.innerHTML = originalText;
+                            submitButton.disabled = false;
+                            submitButton.style.opacity = '1';
+                            
+                            // Reset all field styles
+                            Object.keys(formFields).forEach(fieldName => {
+                                if (formFields[fieldName]) {
+                                    formFields[fieldName].style.borderColor = 'var(--primary-blue)';
+                                }
+                            });
+                        }, 2000);
+                    } else {
+                        // Focus on first invalid field
+                        const firstInvalidField = contactForm.querySelector('input[style*="rgb(220, 53, 69)"], textarea[style*="rgb(220, 53, 69)"]');
+                        if (firstInvalidField) {
+                            firstInvalidField.focus();
+                        }
+                    }
+                });
+            }
+
+            // Initialize animations for elements already in view
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        el.classList.add('visible');
+                    }
+                });
+            }, 100);
+
+            // Enhanced card interactions with error handling
+            try {
+                document.querySelectorAll('.service-card, .metric-card, .tech-card, .partner-card, .expertise-item').forEach(card => {
+                    card.addEventListener('mouseenter', function() {
+                        this.style.transform = 'translateY(-4px)';
+                    });
+                    
+                    card.addEventListener('mouseleave', function() {
+                        this.style.transform = 'translateY(0)';
+                    });
+                });
+            } catch (error) {
+                console.log('Card hover effects initialization failed:', error);
+            }
+
+            console.log('Business Elevate 360 v3.3 PERFECT - All systems operational! 🚀');
+        });
+
+        // Error handling for external scripts
+        window.addEventListener('error', function(e) {
+            console.log('Script error handled:', e.filename, e.lineno, e.colno, e.error);
+        });
+    </script>
+</body>
+</html>
